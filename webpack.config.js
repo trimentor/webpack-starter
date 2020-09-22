@@ -6,7 +6,9 @@ module.exports = {
   devServer: {
     contentBase: './dist',
   },
-  entry: './src/main.js',
+  entry: {
+    main: ['./src/main.js', './src/main.scss'],
+  },
   mode: NODE_ENV,
   module: {
     rules: [
@@ -17,6 +19,10 @@ module.exports = {
           loader: 'babel-loader',
         },
       },
+      {
+        test: /\.scss$/,
+        use: ['style-loader', 'css-loader', 'sass-loader'],
+      }
     ],
   },
   output: {
