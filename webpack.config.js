@@ -1,5 +1,6 @@
 const NODE_ENV = process.env.NODE_ENV || 'development';
 
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 const path = require('path');
 
 module.exports = {
@@ -28,5 +29,6 @@ module.exports = {
   output: {
     filename: '[name].bundle.js',
     path: path.resolve(__dirname, 'dist'),
-  }
+  },
+  plugins: [new HtmlWebpackPlugin()]
 }
