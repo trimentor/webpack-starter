@@ -2,6 +2,10 @@
   "name": "webpack-starter",
   "version": "0.0.1",
   "description": "A starter kit that can be used for your next webpack-based project.",
+  "scripts": {
+    "build": "webpack",
+    "start": "webpack-dev-server --colors --open --progress --watch"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/trimentor/webpack-starter.git"
@@ -11,5 +15,10 @@
   "bugs": {
     "url": "https://github.com/trimentor/webpack-starter/issues"
   },
-  "homepage": "https://github.com/trimentor/webpack-starter#readme"
+  "homepage": "https://github.com/trimentor/webpack-starter#readme",
+  "devDependencies": {
+    "webpack": "^4.44.2",
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^3.11.0"
+  }
 }
