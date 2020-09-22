@@ -1,0 +1,15 @@
+{
+  "name": "webpack-starter",
+  "version": "0.0.1",
+  "description": "A starter kit that can be used for your next webpack-based project.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/trimentor/webpack-starter.git"
+  },
+  "author": "Kjel Delaey",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/trimentor/webpack-starter/issues"
+  },
+  "homepage": "https://github.com/trimentor/webpack-starter#readme"
+}
