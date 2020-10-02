@@ -12,7 +12,7 @@ module.exports = {
   },
   devtool: 'inline-source-map',
   entry: {
-    main: ['./src/main', './src/main.scss'],
+    main: ['./src/main.ts', './src/main.scss'],
   },
   mode: NODE_ENV,
   module: {
