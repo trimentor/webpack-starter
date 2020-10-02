@@ -10,14 +10,15 @@ module.exports = {
   devServer: {
     contentBase: './dist',
   },
+  devtool: 'inline-source-map',
   entry: {
-    main: ['./src/main.js', './src/main.scss'],
+    main: ['./src/main', './src/main.scss'],
   },
   mode: NODE_ENV,
   module: {
     rules: [
       {
-        test: /\.(js|jsx)$/,
+        test: /\.(ts|js)x?$/,
         exclude: /node_modules/,
         use: {
           loader: 'babel-loader',
@@ -35,6 +36,9 @@ module.exports = {
         },
       },
     ],
+  },
+  resolve: {
+    extensions: ['.js', '.jsx', '.ts', '.tsx'],
   },
   output: {
     filename: '[name].bundle.js',
