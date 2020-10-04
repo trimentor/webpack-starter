@@ -4,6 +4,8 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const htmlWebpackPlugin = new HtmlWebpackPlugin({
   template: './src/main.html',
 });
+const ForkTsCheckerWebpackPlugin = require('fork-ts-checker-webpack-plugin');
+const forkTsCheckerWebpackPlugin = new ForkTsCheckerWebpackPlugin();
 const path = require('path');
 
 module.exports = {
@@ -44,5 +46,8 @@ module.exports = {
     filename: '[name].bundle.js',
     path: path.resolve(__dirname, 'dist'),
   },
-  plugins: [htmlWebpackPlugin],
+  plugins: [
+    htmlWebpackPlugin,
+    forkTsCheckerWebpackPlugin,
+  ],
 };
