@@ -1,6 +1,7 @@
 {
   "name": "webpack-starter",
   "version": "0.0.1",
+  "private": true,
   "description": "A starter kit that can be used for your next webpack-based project.",
   "scripts": {
     "build": "webpack",
